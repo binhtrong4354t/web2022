@@ -17,43 +17,58 @@
 
 <body>
     <header>
-        <div class="flex justify-end py-4 w-[858px] mx-auto">
-            <ul class="flex space-x-8 ">
-                <li><a class="p-4 text-xl font-medium body leading-7 hover:text-[#FF6464] text-[#FF6464]" href="">Works</a></li>
-                <li><a class="p-4 text-xl font-medium body leading-7 hover:text-[#FF6464]" href="blog.html">Blog</a>
-                </li>
-                <li><a class="p-4 text-xl font-medium bodyleading-7 hover:text-[#FF6464]" href="contact.html">Contact</a></li>
-            </ul>
+        <div class="sm:w-[375px] md:w-[858px] mx-auto">
+            <div class="flex justify-end py-4">
+                <ul class="lg:flex space-x-8  hidden ">
+                    <li><a class="p-4 text-xl font-medium body leading-7 hover:text-[#FF6464] text-[#FF6464]"
+                            href="works.html">Works</a></li>
+                    <li><a class="p-4 text-xl font-medium body leading-7 hover:text-[#FF6464]" href="blog.html">Blog</a>
+                    </li>
+                    <li><a class="p-4 text-xl font-medium bodyleading-7 hover:text-[#FF6464]"
+                            href="contact.html">Contact</a></li>
+                </ul>
+                <div class="lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-[30px]" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </div>
+            </div>
         </div>
     </header>
     <!-- ---------------------------------- -->
-    <div class="w-[858px] mx-auto">
+    <div class="sm:w-[375px] md:w-[858px] mx-auto sm:hidden md:block">
         <p class="body not-italic font-black text-[44px] leading-[60px] pb-[25px] pt-20">Proje </p>
     </div>
+    <div class="sm:w-[375px] md:w-[858px] mx-auto md:hidden">
+        <p class="body not-italic font-black sm:text-[30px] md:text-[44px] leading-[60px] pb-[13px] pt-[24px]">Work </p>
+    </div>
     <section>
-        <div class=" mx-auto w-[858px]">
-            <div class="grid grid-cols-4 gap-8 pb-10">
+        <div class=" mx-auto sm:w-[375px] md:w-[858px]">
+            <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-8 md:pb-10 sm:pb-[10px]">
                 <div class="col-span-1">
-                    <img src="./images/Rectangle 30.png" alt="" class="w-[246px] h-[180px]">
+                    <img src="./images/Rectangle 30.png" alt=""
+                        class="md:w-[246px] md:h-[180px] sm:w-[339px] sm:h-[230px] ">
                 </div>
-                <div class="col-span-3">
-                    <h2 class="body font-bold text-[30px] leading-[44.06px] not-italic text-[#21243D] ">Designing
+                <div class="col-span-2">
+                    <h2 class="body font-bold text-[30px] leading-[44.06px] not-italic text-[#21243D] pb-4">Designing
                         Dashboards</h2>
                     <a href=""
                         class="font-black w-[42px] h-[60px] text-white border bg-black rounded-full px-2 ">2020</a> <a
                         href=""
-                        class="body not-italic font-normal text-[20px] leading-[29px] text-[#8695A4] pl-8">Dashboard</a>
+                        class="body not-italic font-normal text-[20px] leading-[29px] text-[#8695A4] pl-8 pt-6">Dashboard</a>
                     <p class="body not-italic font-normal text-[16px] leading-[24px] pt-[10px]">Amet minim mollit non
-                        deserunt ullamco est sit aliqua dolor do amet sint. Velit <br> officia consequat duis enim velit
-                        mollit. Exercitation veniam consequat sunt <br> nostrud amet.</p>
+                        deserunt ullamco est sit aliqua dolor do amet sint. Velit officia <br class="md:hidden">
+                        consequat duis enim velit
+                        mollit. Exercitation <br class="md:hidden"> veniam consequat sunt nostrud amet.</p>
                 </div>
             </div>
-            <div class="border gray5 col-span-4 "></div>
-            <div class="grid grid-cols-4 gap-8 py-[46px]">
+            <div class="border sm:w-[375px] md:w-[858px] mx-auto gray4"></div>
+            <div class="md:grid grid-cols-3 gap-8 py-[46px] sm:hidden md:block">
                 <div class="col-span-1">
                     <img src="./images/Rectangle 32.png" alt="" class="w-[246px] h-[180px]">
                 </div>
-                <div class="col-span-3">
+                <div class="col-span-2">
                     <h2 class="body font-bold text-[30px] leading-[44.06px] not-italic text-[#21243D] ">Vibrant
                         Portraits of 2020</h2>
                     <a href=""
@@ -65,12 +80,12 @@
                         mollit. Exercitation veniam consequat sunt <br> nostrud amet.</p>
                 </div>
             </div>
-            <div class="border gray5 col-span-4 "></div>
-            <div class="grid grid-cols-4 gap-8 pb-[50px] pt-10">
+            <div class="border gray5 col-span-4 sm:hidden md:block "></div>
+            <div class="md:grid grid-cols-3 gap-8 pb-[50px] pt-10 sm:hidden md:block">
                 <div class="col-span-1">
                     <img src="./images/Rectangle 34.png" alt="" class="w-[246px] h-[180px]">
                 </div>
-                <div class="col-span-3">
+                <div class="col-span-2">
                     <h2 class="body font-bold text-[30px] leading-[44.06px] not-italic text-[#21243D] ">36 Days of
                         Malayalam type</h2>
                     <a href=""
@@ -81,13 +96,13 @@
                         deserunt ullamco est sit aliqua dolor do amet sint. Velit <br> officia consequat duis enim velit
                         mollit. Exercitation veniam consequat sunt <br> nostrud amet.</p>
                 </div>
-                <div class="border gray5 col-span-4 "></div>
+                <div class="border gray5 col-span-4 sm:hidden md:block"></div>
             </div>
-            <div class="grid grid-cols-4 gap-8 pb-[112px] ">
+            <div class="md:grid grid-cols-3 gap-8 pb-[112px] sm:hidden md:block">
                 <div class="col-span-1">
                     <img src="./images/Rectangle 40.png" alt="" class="w-[246px] h-[180px]">
                 </div>
-                <div class="col-span-3">
+                <div class="col-span-2">
                     <h2 class="body font-bold text-[30px] leading-[44.06px] not-italic text-[#21243D] ">Components</h2>
                     <a href=""
                         class="font-black w-[42px] h-[60px] text-white border bg-black rounded-full px-2 ">2018</a> <a
@@ -98,13 +113,33 @@
                         deserunt ullamco est sit aliqua dolor do amet sint. Velit <br> officia consequat duis enim velit
                         mollit. Exercitation veniam consequat sunt <br> nostrud amet.</p>
                 </div>
-                <div class="border gray5 col-span-4 "></div>
+                <div class="border gray5 col-span-4 sm:hidden md:block"></div>
             </div>
+
+            <div class="md:grid md:grid-cols-3 gap-8 pb-[112px] md:hidden pt-[22px] pb-[22px]">
+                <div class="col-span-1">
+                    <img src="./images/Rectangle 31.png" alt=""
+                        class="md:w-[246px] md:h-[180px] sm:w-[339px] sm:h-[230px] pb-4">
+                </div>
+                <div class="col-span-2">
+                    <h2 class="body font-bold text-[30px] leading-[44.06px] not-italic text-[#21243D] pb-[10px]">
+                        Components</h2>
+                    <a href=""
+                        class="font-black w-[42px] h-[60px] text-white border bg-black rounded-full px-2 ">2020</a> <a
+                        href=""
+                        class="body not-italic font-normal text-[20px] leading-[29px] text-[#8695A4] pl-8 pt-[12px]">Website</a>
+                    <p class="body not-italic font-normal text-[16px] leading-[24px] pt-[10px]">Amet minim mollit non
+                        deserunt ullamco est sit aliqua dolor do amet sint. Velit officia <br> consequat duis enim velit
+                        mollit. Exercitation <br> veniam consequat sunt nostrud amet.</p>
+                </div>
+
+            </div>
+            <div class="border sm:w-[375px] md:w-[858px] mx-auto gray4 md:hidden "></div>
         </div>
     </section>
     <!-- ------------------------------------ -->
     <section>
-        <div class="w-[858px] h-[182px] mx-auto">
+        <div class="sm:w-[375px] md:w-[858px] h-[182px] mx-auto pt-[33px]">
             <div class="flex justify-center ">
                 <img src="images/fb.svg" alt="" class="p-4">
                 <img src="images/insta.svg" alt="" class="p-4">

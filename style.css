@@ -9,8 +9,13 @@
 body{
   font-family: 'Heebo', sans-serif;
 }
-gray5{
+.gray5{
   width: 858px;
   height: 0;
-  border: 1px solid #2c3e50;
+  border: 1px solid #E0E0E0;
+}
+.gray4{
+  width: 681px;
+  height: 0;
+  border: 1px solid #E0E0E0;
 }
