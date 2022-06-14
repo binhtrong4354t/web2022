@@ -18,8 +18,8 @@
 <body>
 	<header>
 		<div class=" mx-auto md:w-[858px] sm:w-[375px]">
-			<div class="flex justify-end py-4">
-				<ul class="lg:flex space-x-8  hidden ">
+			<div  class="flex justify-end py-4 ">
+				<ul id="list-nav"  class="list-nav md:flex md:space-x-8  hidden ">
 					<li><a class="p-4 text-xl font-medium body leading-7 hover:text-[#FF6464]"
 							href="works.html">Works</a></li>
 					<li><a class="p-4 text-xl font-medium body leading-7 hover:text-[#FF6464]" href="blog.html">Blog</a>
@@ -27,16 +27,13 @@
 					<li><a class="p-4 text-xl font-medium bodyleading-7 hover:text-[#FF6464]"
 							href="contact.html">Contact</a></li>
 				</ul>
-				<div class="lg:hidden">
-					<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-[30px]" fill="none" viewBox="0 0 24 24"
-						stroke="currentColor" stroke-width="2">
-						<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-					</svg>
+				<div id="menu" class="md:hidden">
+					<img onclick="show()" src="/images/menu.svg " alt=" " />
 				</div>
 			</div>
 			<div class="grid grid-cols-1 xl:grid-cols-3 gap-8 sm:pt[34px] md:pt-[142px] pb-[75px] ">
 				<div class="col-span-2 sm:order-2 md:order-1 sm:text-center md:text-left ">
-					<h2 class="body font-bold text-[44px] sm:leading-[40px] md:leading-[60px]  ">Hi, I am John,
+					<h2 class="body font-bold text-[44px] sm:leading-[40px] md:leading-[60px]  ">Hi, I am Trong,
 						Creative Technologist</h2>
 					<p class="body font-normal leading-[23.5px] sm:text-[16px] md:text-base py-10">Amet minim mollit non
 						deserunt ullamco
@@ -51,7 +48,7 @@
 				</div>
 				<div class="col-span-1 sm:order-1 md:order-2  text-center ">
 					<a href="">
-						<img src="images/Ellipse 1.png" alt=""
+						<img src="images/anh1.jpg" alt=""
 							class="rounded-full md:w-[243px] md:h-[243px] sm:w-[174.38px] sm:h-[180px] sm:mx-auto">
 					</a>
 				</div>
@@ -183,7 +180,20 @@
 				reserved
 			</p>
 		</div>
-	</section>
+	</section>	
+	<script type="text/javascript">
+        function show(){
+            const listNav = document.getElementById('list-nav');
+            
+            if(listNav.style.display == 'none'){
+                listNav.style.display = 'block';
+                // menu.style.display = 'none';
+            } else{
+                listNav.style.display = 'none'
+            }
+        }
+
+    </script>
 	<div id="app"></div>
 	<script type="module" src="/main.js"></script>
 </body>
